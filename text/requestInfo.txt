@@ -1,0 +1,29 @@
+http协议规定，请求由三个部分构成，分别是：
+	-请求方式、URL(统一资源定位符)、HTTP协议/版本
+	-请求头(Request Header)
+	-请求正文(Request Content)
+
+
+不带参数的Get请求信息
+
+GET /index.html HTTP/1.1
+Host: localhost:8888
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+
+
+
+带参数的Get请求信息
+
+GET /index.html?uname=good&paw=nice HTTP/1.1
+Host: localhost:8888
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
